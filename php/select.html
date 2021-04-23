@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけん</title>
+  </head>
+  <body>
+    <div class="select">
+      <label>勝負</label>
+
+      <select class="jannkenn" name="jannkenn">
+        <option value="">-</option>
+        <option value="グー">グー</option>
+        <option value="チョキ">チョキ</option>
+        <option value="パー">パー</option></select
+      >　
+    </div>
+    <script>
+      const selectElement = document.querySelector(".jannkenn");
+
+      selectElement.addEventListener("change", (event) => {
+        alert(selectElement.value + "を選びましたね。");
+      });
+    </script>
+  </body>
+</html>

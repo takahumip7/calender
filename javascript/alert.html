@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alert</title>
+  </head>
+  <body>
+    <form name="frm">
+      <input
+        type="button"
+        name="button3"
+        value="Alert Me!"
+        onClick="read_TextArea(this.form)"
+      />
+      <input type="text" name="myarea" size="50" />
+    </form>
+    <script langage="javascript">
+      //<!--
+      function read_TextArea(form) {
+        alert(form.myarea.value + "さん、おはようございます");
+      }
+      //-->
+    </script>
+  </body>
+</html>
